@@ -1,0 +1,190 @@
+.backdrop {
+  width: 100%;
+  height: 280vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.432);
+  display: flex;
+  justify-content: center;
+  @media (width < 780px) {
+    height: 480vh;
+  }
+
+  .modal {
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    margin-top: 90px;
+    border: none;
+    @media (width < 780px) {
+      width: 90%;
+    }
+
+    height: 50%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .card {
+      width: 80%;
+      height: 35%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid rgba(0, 0, 0, 0.281);
+      border-radius: 5px;
+    }
+    
+    .card3 {
+      width: 80%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 2px solid rgb(1, 126, 199);
+      border-radius: 5px;
+      @media (width < 780px) {
+        height: 35%;
+        padding: 0px;
+        gap: 40px;
+      }
+    }
+  }
+}
+h4 {
+  display: none;
+  
+  align-items: center;
+  gap: 10px;
+  margin-left: 80px;
+  color: black;
+  font-size: 17px;
+  margin: 0;
+
+  @media (width < 780px) {
+    margin: 0;
+    gap: 10px;
+    display: flex;
+  }
+}
+.firstpart {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 80px;
+  color: black;
+  font-size: 17px;
+  margin: 0;
+  @media (width < 780px) {
+    display: none;
+  }
+}
+p {
+  color: gray;
+  width: 80%;
+  font-size: 12px;
+  @media (width < 780px) {
+    margin: 0;
+  }
+}
+img {
+  width: 20px;
+  height: 20px;
+}
+.start {
+  display: flex;
+  width: 90%;
+  align-items: center;
+
+  gap: 19px;
+  margin-top: 10px;
+  @media (width < 780px) {
+    flex-direction: column;
+  margin-top: 10px;
+    gap: 10px;
+  }
+}
+.radio {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.radios {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgb(43, 0, 0) 55, 255, 255;
+  border-radius: 50%;
+  background: blue;
+  
+}
+.radios::after {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+h3 {
+  margin: 0;
+  font-size: 15px;
+
+  font-family: sans-serif;
+  color: rgb(0, 70, 70);
+  @media (width < 780px) {
+    font-size: 15px;
+    
+  }
+}
+
+.radio:last-child {
+  border: 1px solid white;
+}
+.enter {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-top: 1px solid black;
+  width: 80%;
+  padding: 10px 0;
+  @media (width < 780px) {
+   
+    flex-direction: column;
+  }
+}
+
+input {
+  width: 30%;
+  padding: 8px 0;
+  border-radius: 40%;
+  border: 0.9px solid rgb(0, 119, 255);
+  justify-content: center;
+
+  align-items: center;
+}
+::placeholder {
+  text-align: center;
+}
+button {
+  padding: 9px;
+  margin-left: 20px;
+  border: none;
+  background: green;
+  color: white;
+  font-weight: bold;
+
+  border-radius: 20px;
+  border-radius: none;
+}
